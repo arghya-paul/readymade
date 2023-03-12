@@ -319,13 +319,65 @@ import { View, Text, StyleSheet } from 'react-native';
 
 
 
+
+
 // create a component
 const NewLogin = () => {
 
 
-  const userLogin = ()=>{
-    
-  }
+  // const userLogin = async () => {
+  //   let pattern =
+  //     /[a-zA-Z0-9]+[\.]?([a-zA-Z0-9]+)?[\@][a-z]{3,20}[\.][a-z]{2,5}/g;
+  //   let emailresult = pattern.test(email);
+  //   if (
+  //     Fldvalid(password) === 0 ||
+  //     password == '' ||
+  //     Fldvalid(email) === 0 ||
+  //     email == ''
+  //   ) {
+  //     SimpleToast.show('Please Fill Out All Field', SimpleToast.SHORT);
+  //     return;
+  //   } else if (emailresult != true) {
+  //     SimpleToast.show('Invalid Email Id', SimpleToast.SHORT);
+  //     return;
+  //   } else if (password.length < 8) {
+  //     SimpleToast.show('Password should be Min. 8 Character', SimpleToast.SHORT);
+  //     return;
+  //   }
+  //   setLoader(true)
+
+
+  //   let data = {
+  //     email: email,
+  //     password: password,
+  //   }
+  //   //  console.log('DATA>>>>====',data)
+
+  //   AuthService.login(data).
+  //     then(result => {
+  //       console.log('LOGIN>>>>>>>..========', result)
+
+  //       if (result && result.status) {
+  //         setLoader(false)
+  //         // updateToken(result.data.id);
+  //         AuthService.setAccount(result.data);
+  //         AuthService.setToken(result.data.token);
+  //         dispatch(setuser({}))
+  //         SimpleToast.showWithGravity('Logged In Successfully!', SimpleToast.SHORT, SimpleToast.BOTTOM);
+
+  //       }
+  //       else {
+  //         SimpleToast.show(result.message);
+  //         setLoader(false)
+  //       }
+  //     }).catch(err => {
+  //       console.log('err>>>', err)
+  //       SimpleToast.show(err.message)
+  //     })
+
+
+
+  // }
   return (
     <View style={styles.container}>
       <Text>MyComponent</Text>
